@@ -291,7 +291,7 @@ function finalizeOrder() {
 
     if (discount > 0) {
         message +=
-            `Desconto Pix: -${formatCurrency(discount)}\n`;
+         `Desconto: -${formatCurrency(discount)}\n`;
     }
 
     message +=
@@ -385,7 +385,6 @@ paymentMethod.addEventListener("change", () => {
     discountRow.style.display =
         discount > 0 ? "flex" : "none";
 });
-
 
 // =========================================================
 // FINALIZAÇÃO
