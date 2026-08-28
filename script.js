@@ -383,9 +383,7 @@ paymentMethod.addEventListener("change", () => {
         formatCurrency(subtotal - discount);
 
     discountRow.style.display =
-        paymentMethod.value === "pix"
-            ? "flex"
-            : "none";
+        discount > 0 ? "flex" : "none";
 });
 
 
