@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cardápio online do Café & Conecta">
+
+    <title>Cardápio | Café & Conecta</title>
+
+    <link rel="icon" type="image/jpeg" href="imagens/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img
+                src="imagens/logo.jpg"
+                alt="Logo do Café & Conecta"
+                class="cafeteria-logo"
+            >
+        </div>
+
+        <h1>Café & Conecta</h1>
+        <p>Café que inspira, espaço que conecta</p>
+    </header>
+
+
+    <!-- FILTROS -->
+
+    <nav class="filter-container" aria-label="Categorias do cardápio">
+
+        <button class="filter-btn active" data-category="todos">
+            Todos
+        </button>
+
+        <button class="filter-btn" data-category="cafes">
+            Cafés
+        </button>
+
+        <button class="filter-btn" data-category="acompanhamentos">
+            Acompanhamentos
+        </button>
+
+        <button class="filter-btn" data-category="doces">
+            Doces
+        </button>
+
+        <button class="filter-btn" data-category="lanches">
+            Lanches
+        </button>
+
+        <button class="filter-btn" data-category="bebidas-frias">
+            Bebidas Frias
+        </button>
+
+    </nav>
+
+
+    <!-- LAYOUT PRINCIPAL -->
+
+    <div class="main-layout">
+
+        <main class="menu-container" id="menu">
+
+
+            <!-- =========================
+                 CAFÉS
+            ========================== -->
+
+            <article class="menu-item" data-category="cafes">
+
+                <img
+                    src="imagens/espresso.jpg"
+                    alt="Espresso Tradicional"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Espresso Tradicional</h3>
+
+                    <p>
+                        Café expresso curto com grãos selecionados
+                        100% arábica.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 6,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Espresso Tradicional"
+                        data-price="6"
+                        aria-label="Adicionar Espresso Tradicional ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="cafes">
+
+                <img
+                    src="imagens/cappuccino.jpg"
+                    alt="Cappuccino Conecta"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Cappuccino Conecta</h3>
+
+                    <p>
+                        Espresso, leite vaporizado, espuma cremosa
+                        e canela em pó.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 12,50
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Cappuccino Conecta"
+                        data-price="12.5"
+                        aria-label="Adicionar Cappuccino Conecta ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="cafes">
+
+                <img
+                    src="imagens/latte.jpg"
+                    alt="Café Latte"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Café Latte</h3>
+
+                    <p>
+                        Uma dose generosa de leite quente com
+                        nosso espresso artesanal.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 10,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Café Latte"
+                        data-price="10"
+                        aria-label="Adicionar Café Latte ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="cafes">
+
+                <img
+                    src="imagens/mocha.jpg"
+                    alt="Mocha"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Mocha</h3>
+
+                    <p>
+                        Espresso cremoso combinado com leite
+                        vaporizado e chocolate.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 13,50
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Mocha"
+                        data-price="13.5"
+                        aria-label="Adicionar Mocha ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 ACOMPANHAMENTOS
+            ========================== -->
+
+            <article class="menu-item" data-category="acompanhamentos">
+
+                <img
+                    src="imagens/pao-de-queijo.jpg"
+                    alt="Pão de Queijo Mineiro"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Pão de Queijo Mineiro</h3>
+
+                    <p>
+                        Tradicional pão de queijo quentinho
+                        com queijo da canastra.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 5,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Pão de Queijo Mineiro"
+                        data-price="5"
+                        aria-label="Adicionar Pão de Queijo ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="acompanhamentos">
+
+                <img
+                    src="imagens/croissant.jpg"
+                    alt="Croissant de Manteiga"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Croissant de Manteiga</h3>
+
+                    <p>
+                        Massa folhada francesa super crocante
+                        e amanteigada.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 14,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Croissant de Manteiga"
+                        data-price="14"
+                        aria-label="Adicionar Croissant ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="acompanhamentos">
+
+                <img
+                    src="imagens/torrada.jpg"
+                    alt="Torrada na Chapa"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Torrada na Chapa</h3>
+
+                    <p>
+                        Fatias de pão douradas na chapa
+                        com manteiga.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 7,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Torrada na Chapa"
+                        data-price="7"
+                        aria-label="Adicionar Torrada ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 DOCES
+            ========================== -->
+
+            <article class="menu-item" data-category="doces">
+
+                <img
+                    src="imagens/brownie.jpg"
+                    alt="Brownie de Chocolate"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Brownie de Chocolate</h3>
+
+                    <p>
+                        Brownie macio por dentro com
+                        chocolate intenso.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 9,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Brownie de Chocolate"
+                        data-price="9"
+                        aria-label="Adicionar Brownie ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="doces">
+
+                <img
+                    src="imagens/cookie.jpg"
+                    alt="Cookie com Chocolate"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Cookie com Chocolate</h3>
+
+                    <p>
+                        Cookie artesanal crocante por fora
+                        e macio por dentro.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 8,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Cookie com Chocolate"
+                        data-price="8"
+                        aria-label="Adicionar Cookie ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="doces">
+
+                <img
+                    src="imagens/bolo.jpg"
+                    alt="Bolo de Chocolate"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Bolo de Chocolate</h3>
+
+                    <p>
+                        Fatia de bolo de chocolate com
+                        cobertura cremosa.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 10,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Bolo de Chocolate"
+                        data-price="10"
+                        aria-label="Adicionar Bolo ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 LANCHES
+            ========================== -->
+
+            <article class="menu-item" data-category="lanches">
+
+                <img
+                    src="imagens/misto-quente.jpg"
+                    alt="Misto Quente"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Misto Quente</h3>
+
+                    <p>
+                        Pão tostado com presunto e queijo
+                        derretido.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 11,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Misto Quente"
+                        data-price="11"
+                        aria-label="Adicionar Misto Quente ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="lanches">
+
+                <img
+                    src="imagens/sanduiche-natural.jpg"
+                    alt="Sanduíche Natural"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Sanduíche Natural</h3>
+
+                    <p>
+                        Sanduíche leve com recheio fresco
+                        e ingredientes selecionados.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 13,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Sanduíche Natural"
+                        data-price="13"
+                        aria-label="Adicionar Sanduíche Natural ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="lanches">
+
+                <img
+                    src="imagens/croissant-presunto.jpg"
+                    alt="Croissant de Presunto e Queijo"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Croissant de Presunto e Queijo</h3>
+
+                    <p>
+                        Croissant crocante recheado com
+                        presunto e queijo.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 16,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Croissant de Presunto e Queijo"
+                        data-price="16"
+                        aria-label="Adicionar Croissant recheado ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 BEBIDAS FRIAS
+            ========================== -->
+
+            <article class="menu-item" data-category="bebidas-frias">
+
+                <img
+                    src="imagens/iced-macchiato.jpg"
+                    alt="Iced Caramel Macchiato"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Iced Caramel Macchiato</h3>
+
+                    <p>
+                        Café gelado com leite, calda artesanal
+                        de caramelo e gelo.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 15,50
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Iced Caramel Macchiato"
+                        data-price="15.5"
+                        aria-label="Adicionar Iced Caramel Macchiato ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="bebidas-frias">
+
+                <img
+                    src="imagens/frappe.jpg"
+                    alt="Frappé de Chocolate"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Frappé de Chocolate</h3>
+
+                    <p>
+                        Bebida gelada e cremosa com chocolate
+                        e gelo batido.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 16,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Frappé de Chocolate"
+                        data-price="16"
+                        aria-label="Adicionar Frappé ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="menu-item" data-category="bebidas-frias">
+
+                <img
+                    src="imagens/suco-laranja.jpg"
+                    alt="Suco Natural de Laranja"
+                    class="product-image"
+                >
+
+                <div class="item-info">
+                    <h3>Suco Natural de Laranja</h3>
+
+                    <p>
+                        Suco natural preparado na hora
+                        com laranjas selecionadas.
+                    </p>
+                </div>
+
+                <div class="item-action">
+
+                    <span class="price">
+                        R$ 8,00
+                    </span>
+
+                    <button
+                        class="add-btn"
+                        data-name="Suco Natural de Laranja"
+                        data-price="8"
+                        aria-label="Adicionar Suco de Laranja ao carrinho"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </article>
+
+        </main>
+
+
+        <!-- CARRINHO -->
+
+        <aside class="cart-container">
+
+            <div class="cart-header">
+
+                <div>
+                    <span class="cart-label">
+                        SEU PEDIDO
+                    </span>
+
+                    <h2>Seu Carrinho</h2>
+                </div>
+
+                <span class="cart-count" id="cart-count">
+                    0
+                </span>
+
+            </div>
+
+
+            <div
+                id="cart-items"
+                class="cart-items-list"
+                aria-live="polite"
+            >
+                <div class="empty-cart">
+                    <span class="empty-cart-icon">☕</span>
+
+                    <p>
+                        Seu carrinho está vazio.
+                    </p>
+
+                    <small>
+                        Adicione algo delicioso!
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="cart-summary">
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">
+                        R$ 0,00
+                    </span>
+                </div>
+
+
+                <div
+                    class="summary-row discount-row"
+                    id="discount-row"
+                >
+                    <span>Desconto Pix</span>
+
+                    <span id="cart-discount">
+                        - R$ 0,00
+                    </span>
+                </div>
+
+
+                <div class="total-row">
+
+                    <span>Total</span>
+
+                    <strong id="cart-total">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div class="payment-section">
+
+                    <label for="payment-method">
+                        Forma de pagamento
+                    </label>
+
+                    <select id="payment-method">
+
+                        <option value="pix">
+                            Pix — 10% de desconto
+                        </option>
+
+                        <option value="cartao-credito">
+                            Cartão de Crédito
+                        </option>
+
+                        <option value="cartao-debito">
+                            Cartão de Débito
+                        </option>
+
+                        <option value="dinheiro">
+                        Dinheiro — 10% de desconto
+                      </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="checkout-btn"
+                    id="checkout-btn"
+                >
+                    Finalizar Pedido
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Café & Conecta.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
